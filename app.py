@@ -20,8 +20,7 @@ def keep_alive():
     t.start()
 
 
-TOKEN = 'MTM2MTA0MTE2MzUwNjgxMDg5MA.GtmDRW.W-sVdZHMQHNIilrYl8aiXPCamtDqnhdK58uxQk'
-#os.getenv('DISCORD_BOT_TOKEN')  # Ensure the environment variable is set
+TOKEN = os.getenv('DISCORD_BOT_TOKEN')  # Ensure the environment variable is set
 
 if TOKEN is None:
     raise ValueError("No token provided. Please set the DISCORD_BOT_TOKEN environment variable.")
